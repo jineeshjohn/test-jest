@@ -3,7 +3,6 @@ import axios from 'axios';
 
 class Users {
   static all() {
-    console.log( "VVVVV:" , axios.post() );
     return axios.get('/users.json').then(resp => resp.data);
   }
 }

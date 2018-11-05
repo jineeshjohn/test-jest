@@ -6,7 +6,6 @@ jest.mock('axios');
 
 test('should fetch Products', () => {
   const resp = {data: [{name: 'Bob'}]};
-  console.log('LLLL', axios);
   axios.get.mockResolvedValue(resp);
  //  axios.jj = jest.fn();
 

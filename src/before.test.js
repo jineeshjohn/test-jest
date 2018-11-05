@@ -5,9 +5,8 @@ describe("Initialize docker", () => {
         console.log("Check point 1");
 
         await setTimeout(()=> {
-            console.log("Check point 2");
             done()
-        }, 3000);
+        }, 1000);
          
  
     });

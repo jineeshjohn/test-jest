@@ -6,7 +6,6 @@ jest.mock('axios');
 
 test('should fetch users', () => {
   const resp = {data: [{name: 'Bob'}]};
-  console.log('LLLL', axios);
   axios.get.mockResolvedValue(resp);
   axios.post =  jest.fn(() => 'default').mockImplementationOnce(() => ({first: 'first call'}));
 
